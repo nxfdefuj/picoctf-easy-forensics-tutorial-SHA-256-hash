@@ -1,0 +1,15 @@
+picoctf easy forensics tutorial SHA-256 hash
+
+
+step 1:./files:
+
+step 2:sha256sum files/*   (the program sha256sum is designed to verify data integrity using the SHA-256 (SHA-2 family with a digest length of 256 bits). SHA-256 hashes used properly can confirm both file integrity and authenticity. SHA-256 serves a similar purpose to a prior algorithm recommended by Ubuntu, MD5, but is less vulnerable to attack.)
+
+step 3:sha256sum files/* | grep "8c8ca29bc0d256be4006489d3fa2113313f273010b5c092ae24f0d8cd1ff5c02"      (GREP is a powerful Windows grep tool. Quickly search through large numbers of files on your PC or network, including text and binary files, compressed archives, MS Word documents, Excel spreadsheets, PDF files, OpenOffice files, etc. Find the information you want with powerful text patterns (regular expressions) specifying the form of what you want, instead of literal text. Search and replace with one or many regular expressions to comprehensively maintain web sites, source code, reports, etc. Extract statistics and knowledge from logs files and large data sets.)
+
+
+step 4:decrypt.sh files/c6c8b911
+
+FLAG:picoCTF{trust_but_verify_c6c8b911}
+
+
